@@ -3,7 +3,7 @@ module.exports = {
         assets: "./assets",
         
         js: [
-            "ace/ace.js",
+            "ace.min.js",
             "ace/theme-tomorrow.js",
             "ace/mode-javascript.js",
             "main.js"
