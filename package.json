@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A GitBook plugin to integrate the Ace Editor for JavaScript code execution.",
   "main": "index.js",
+  "engines": {
+    "gitbook": ">=2.x.x"
+  },
   "scripts": {},
   "keywords": ["gitbook", "plugin", "editor", "javascript", "ace"],
   "author": "Suman Kunwar",
