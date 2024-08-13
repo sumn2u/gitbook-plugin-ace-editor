@@ -19,8 +19,8 @@ module.exports = {
                 return `
                     <div class="compiler-container">
                         <h2 class="compiler-title">Try Yourself!</h2>
-                        <div id="editor" class="compiler-textarea" style="height: 200px; width: 100%;"></div><br>
-                        <button id="run" class="compiler-button">Run Code</button><br>
+                        <div id="editor" class="compiler-textarea" style="height: 200px; width: 100%;"></div>
+                        <button id="run" class="compiler-button">Run Code</button>
                         <h3 class="compiler-output-title">Output:</h3>
                         <pre id="compiler-output" class="compiler-output"></pre>
                     </div>
