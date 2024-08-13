@@ -1,8 +1,11 @@
 module.exports = {
     website: {
         assets: "./assets",
+        
         js: [
-            "ace.min.js",
+            "ace/ace.js",
+            "ace/theme-tomorrow.js",
+            "ace/mode-javascript.js",
             "main.js"
         ],
         css: [
@@ -19,7 +22,7 @@ module.exports = {
                         <div id="editor" class="compiler-textarea" style="height: 200px; width: 100%;"></div><br>
                         <button id="run" class="compiler-button">Run Code</button><br>
                         <h3 class="compiler-output-title">Output:</h3>
-                        <pre id="output" class="compiler-output"></pre>
+                        <pre id="compiler-output" class="compiler-output"></pre>
                     </div>
                 `;
             }

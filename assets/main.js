@@ -1,11 +1,11 @@
-require(["gitbook", "jquery"], function(gitbook, $) {
+require(["gitbook"], function(gitbook, $) {
     // When GitBook is ready
     gitbook.events.bind("page.change", function() {
         // Initialize Ace Editor
         var editorElement = document.getElementById("editor");
         if (editorElement) {
             var editor = ace.edit("editor");
-            editor.setTheme("ace/theme/monokai");
+            editor.setTheme("ace/theme/tomorrow");
             editor.session.setMode("ace/mode/javascript");
             editor.setValue("// Write your JavaScript code here");
 
@@ -15,7 +15,7 @@ require(["gitbook", "jquery"], function(gitbook, $) {
                 var code = editor.getValue();
 
                 // Reset the output area
-                var outputElement = document.getElementById("output");
+                var outputElement = document.getElementById("compiler-output");
                 outputElement.textContent = "";
 
                 // Store the original console.log function
