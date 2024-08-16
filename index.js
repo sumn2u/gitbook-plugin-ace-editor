@@ -1,7 +1,7 @@
 module.exports = {
     website: {
         assets: "./assets",
-        
+
         js: [
             "ace.min.js",
             "ace/theme-tomorrow.js",
@@ -14,12 +14,12 @@ module.exports = {
     },
     blocks: {
         aceeditor: {
-            process: function(block) {
+            process: function (block) {
                 // Extract parameters with default values
                 const kwargs = block.kwargs || {};
                 const compilerTitle = kwargs.compilerTitle || "Try Yourself!";
                 const compilerOutputTitle = kwargs.compilerOutputTitle || "Output:";
-                
+
                 // HTML content for the Ace Editor
                 return `
                     <div class="compiler-container">
